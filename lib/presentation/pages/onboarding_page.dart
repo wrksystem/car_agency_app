@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/animation/route/animation_route.dart';
 import 'car_list_screen.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -53,9 +54,13 @@ class OnboardingPage extends StatelessWidget {
             height: 40,
             child: ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).pushAndRemoveUntil(
-                      MaterialPageRoute(builder: (context) => CarListScreen()),
-                      (route) => false);
+                  // Navigator.of(context).pushAndRemoveUntil(
+                  //     MaterialPageRoute(builder: (context) => CarListScreen()),
+                  //     (route) => false);
+                  Navigator.push(
+                    context,
+                    AnimationRouter.createRoute(CarListScreen()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(

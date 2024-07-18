@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -49,20 +50,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAwceeQemhKT2QaIg24QNDkVMn8Z54Cl4o',
-    appId: '1:641149258420:android:6d438a18824a23c8d9a5e1',
-    messagingSenderId: '641149258420',
-    projectId: 'car-agency-app',
-    storageBucket: 'car-agency-app.appspot.com',
+  static FirebaseOptions android = FirebaseOptions(
+    apiKey: dotenv.env['ANDROID_FIREBASE_API_KEY']!,
+    appId: dotenv.env['ANDROID_FIREBASE_APP_ID']!,
+    messagingSenderId: dotenv.env['ANDROID_FIREBASE_MESSAGING_SENDER_ID']!,
+    projectId: dotenv.env['ANDROID_FIREBASE_PROJECT_ID']!,
+    storageBucket: dotenv.env['ANDROID_FIREBASE_STORAGE_BUCKET']!,
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCMWOOAOMXYGe0M6lgP41YK6kffbD9Nrz8',
-    appId: '1:641149258420:ios:503228393124ad3bd9a5e1',
-    messagingSenderId: '641149258420',
-    projectId: 'car-agency-app',
-    storageBucket: 'car-agency-app.appspot.com',
-    iosBundleId: 'wrksystem.com.carAgencyApp',
+  static FirebaseOptions ios = FirebaseOptions(
+    apiKey: dotenv.env['IOS_FIREBASE_API_KEY']!,
+    appId: dotenv.env['IOS_FIREBASE_APP_ID']!,
+    messagingSenderId: dotenv.env['IOS_FIREBASE_MESSAGING_SENDER_ID']!,
+    projectId: dotenv.env['IOS_FIREBASE_PROJECT_ID']!,
+    storageBucket: dotenv.env['IOS_FIREBASE_STORAGE_BUCKET']!,
+    iosBundleId: dotenv.env['IOS_FIREBASE_IOS_BUNDLE_ID']!,
   );
 }
