@@ -1,4 +1,4 @@
-import 'package:car_agency_app/presentation/pages/car_list_screen.dart';
+import 'package:car_agency_app/presentation/pages/MapsDetailsPage.dart';
 import 'package:car_agency_app/presentation/pages/onboarding_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +26,7 @@ class MainApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const OnboardingPage(),
+      home: OnboardingPage(),
     );
   }
 }
