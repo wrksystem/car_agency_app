@@ -40,7 +40,7 @@ Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tel
 ### OBS
 
 A versão do Flutter utilizadas no projeto é a `3.22.0`.<br>
-Para conseguir executar o projeto, será necessário criar um arquivo `.env` onde terás suas credenciais de acesso.<br>
+Para conseguir executar o projeto, será necessário criar um arquivo `.env` onde terás suas credenciais de acesso. Esse `.env` deve ser inserido dentro da pasta `assets` pois esta ja está com o caminho predefinido para fazer a busca do `.env`.<br>
 A configuração do `Firebase` foi feita utilizando o `Firebase Tools` através de `line comands`, então caso não esteja conseguindo configurar, entre em contato que poderei montar um pequeno Guide de configuração.<br>
 
 # Showcase da Aplicação
