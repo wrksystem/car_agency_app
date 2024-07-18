@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'car_list_screen.dart';
+
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
 
@@ -16,11 +18,10 @@ class OnboardingPage extends StatelessWidget {
             flex: 2,
             child: Container(
               decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/onboarding.png"),
-                  fit: BoxFit.cover,
-                )
-              ),
+                  image: DecorationImage(
+                image: AssetImage("assets/onboarding.png"),
+                fit: BoxFit.cover,
+              )),
             ),
           ),
           Expanded(
@@ -31,10 +32,9 @@ class OnboardingPage extends StatelessWidget {
                   Text(
                     'Premium cars. \nEnjoy the luxury.',
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold
-                    ),
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 20),
                   Text(
@@ -42,35 +42,35 @@ class OnboardingPage extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15,
-                      )
-                  ),
+                      )),
                 ],
               ),
             ),
           ),
-
           const SizedBox(height: 20),
           SizedBox(
             width: 300,
             height: 40,
             child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => CarListScreen()));
+                },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
                   foregroundColor: Colors.black,
                   backgroundColor: Colors.white,
-                    elevation: 0,
+                  elevation: 0,
                 ),
                 child: const Text(
-                    'Let\'s Go',
+                  'Let\'s Go',
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
                   ),
-                )
-            ),
+                )),
           ),
           const SizedBox(height: 30),
         ],
