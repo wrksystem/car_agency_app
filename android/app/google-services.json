@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "641149258420",
+    "project_id": "car-agency-app",
+    "storage_bucket": "car-agency-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641149258420:android:6d438a18824a23c8d9a5e1",
+        "android_client_info": {
+          "package_name": "wrksystem.com.car_agency_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwceeQemhKT2QaIg24QNDkVMn8Z54Cl4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
