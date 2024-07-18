@@ -45,6 +45,12 @@ A configuração do `Firebase` foi feita utilizando o `Firebase Tools` através 
 
 # Showcase da Aplicação
 
+https://github.com/user-attachments/assets/97f957c6-f83e-4ce8-b00e-14af19011692
+
+
+
+
+
 
 
 
